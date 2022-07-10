@@ -27,3 +27,5 @@ map("n", "C<Space>", "/")
 vim.opt.hidden = true
 vim.cmd("noswapfile")
 
+-- File explorer
+require("nvim-tree").setup()
