@@ -2,6 +2,10 @@ local map = function(type, key, value)
     vim.api.nvim_set_keymap(type, key, value, {noremap = true, silent = true})
 end
 
+function Nmap(key, value)
+    map("n", key, value)
+end
+
 -- Leader
 vim.g.mapleader = ","
 
