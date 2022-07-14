@@ -3,7 +3,7 @@
 
 Clone dotfiles into a bare repository in a "dot" folder of your $HOME:
 ```zsh
-git clone --bare https://github.com/jsonkuan/dotfiles $HOME/.cfg
+git clone --bare https://github.com/jsonkuan/dotfiles $HOME/.dotfiles
 
 ```
 
