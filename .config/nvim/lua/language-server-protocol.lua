@@ -5,8 +5,8 @@
 local lspconfig = require("lspconfig")
 
 -- Language servers
+lspconfig.ccls.setup {}
 lspconfig.pyright.setup{}
-lspconfig.sourcekit.setup{}
 lspconfig.sumneko_lua.setup {
     settings = {
         Lua = {
@@ -17,8 +17,7 @@ lspconfig.sumneko_lua.setup {
     }
 }
 
--- Additional tools
-require("clangd_extensions").setup()
+-- GUI (:LSPInfo)
 require("nvim-lsp-installer").setup {
     automatic_installation = true
 }
