@@ -30,6 +30,3 @@ map("n", "C<Space>", "/")
 -- Don't save buffers
 vim.opt.hidden = true
 vim.cmd("noswapfile")
-
--- File explorer
-require("nvim-tree").setup()
