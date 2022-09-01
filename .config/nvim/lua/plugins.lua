@@ -19,6 +19,7 @@ Plug 'p00f/clangd_extensions.nvim'
 Plug 'tpope/vim-surround'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'EdenEast/nightfox.nvim'
+Plug 'sbdchd/neoformat'
 
 -- Search
 Plug 'nvim-telescope/telescope.nvim'
