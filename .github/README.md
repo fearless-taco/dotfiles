@@ -1,3 +1,18 @@
+# Requirements
+Install [brew](https://brew.sh) 
+```zsh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+Install neovim
+```zsh
+brew install [neovim](https://github.com/neovim/neovim)
+```
+Install [vim-plug](https://github.com/junegunn/vim-plug) (for nvim)
+```zsh
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
+
 # Installation
 [Adapted from Bitbucket](https://www.atlassian.com/git/tutorials/dotfiles)
 
