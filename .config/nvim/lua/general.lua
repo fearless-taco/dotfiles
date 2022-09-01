@@ -25,8 +25,6 @@ vim.g.indent_blankline_enabled = false
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
-map("n", "C<Space>", "/")
 
 -- Don't save buffers
 vim.opt.hidden = true
-vim.cmd("noswapfile")
