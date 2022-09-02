@@ -16,7 +16,7 @@ Plug 'ray-x/lsp_signature.nvim'
 Plug 'p00f/clangd_extensions.nvim'
 
 -- Text
-Plug 'tpope/vim-surround'
+Plug 'Raimondi/delimitMate'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'EdenEast/nightfox.nvim'
 Plug 'sbdchd/neoformat'
