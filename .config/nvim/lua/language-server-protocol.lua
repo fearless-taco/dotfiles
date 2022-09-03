@@ -4,6 +4,9 @@
 
 local lspconfig = require("lspconfig")
 
+-- Completion-nvim
+lspconfig.clangd.setup{on_attach=require'completion'.on_attach}
+
 -- Language servers
 lspconfig.ccls.setup {}
 lspconfig.pyright.setup{}

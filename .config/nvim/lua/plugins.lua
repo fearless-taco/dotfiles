@@ -40,5 +40,6 @@ Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'onsails/lspkind.nvim'
 
+Plug 'nvim-lua/completion-nvim'
 
 vim.call('plug#end')
