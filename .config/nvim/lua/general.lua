@@ -28,3 +28,6 @@ vim.opt.ignorecase = true
 
 -- Don't save buffers
 vim.opt.hidden = true
+
+-- Yank to clipboard
+vim.api.nvim_command('set clipboard=unnamed')
