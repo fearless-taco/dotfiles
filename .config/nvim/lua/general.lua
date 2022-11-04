@@ -8,6 +8,7 @@ end
 
 -- Leader
 vim.g.mapleader = ","
+Nmap("<leader>z", "<C-z>") -- Suspend session
 
 -- Color
 vim.opt.termguicolors = true
