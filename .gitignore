@@ -1,2 +1,5 @@
 # Dotfiles Bare Repository
 .cfg
+
+# MacOS
+.DS_Store
