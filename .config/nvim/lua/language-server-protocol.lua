@@ -1,29 +1,17 @@
 --------------------------------------------------------------------------------
 -- LSP
 --------------------------------------------------------------------------------
-
-local lspconfig = require("lspconfig")
-
--- Completion-nvim
-lspconfig.clangd.setup{on_attach=require'completion'.on_attach}
-
--- Language servers
-lspconfig.ccls.setup {}
-lspconfig.pyright.setup{}
-lspconfig.sumneko_lua.setup {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
-}
-
 -- GUI (:LSPInfo)
 require("nvim-lsp-installer").setup {
     automatic_installation = true
 }
+
+local lspconfig = require("lspconfig")
+-- Language servers
+lspconfig.tsserver.setup {}
+lspconfig.ccls.setup {}
+lspconfig.pyright.setup{}
+
 
 --------------------------------------------------------------------------------
 -- LSPTrouble

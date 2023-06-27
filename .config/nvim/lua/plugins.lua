@@ -1,3 +1,6 @@
+-- README
+-- To install plugins use- :PlugInstall
+
 --------------------------------------------------------------------------------
 -- Plugins
 --------------------------------------------------------------------------------
@@ -32,14 +35,9 @@ Plug 'folke/lsp-colors.nvim'
 -- Config Reload
 Plug 'famiu/nvim-reload'
 
--- Completion
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'onsails/lspkind.nvim'
+-- Completion (Conquer of Completion -COC) 
+Plug 'neoclide/coc.nvim'
 
-Plug 'nvim-lua/completion-nvim'
+
 
 vim.call('plug#end')
