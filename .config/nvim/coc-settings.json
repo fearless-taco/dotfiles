@@ -1,0 +1,12 @@
+{
+    "languageserver": {
+        "lua": {
+            "command": "lua-lsp",
+            "filetypes": ["lua"]
+        },
+        "kotlin": {
+            "command": "~/lsp/kotlin/server/bin/kotlin-language-server",
+            "filetypes": ["kotlin"]
+        }
+    }
+}
