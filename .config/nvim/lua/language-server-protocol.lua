@@ -1,17 +1,3 @@
---------------------------------------------------------------------------------
--- LSP
---------------------------------------------------------------------------------
--- GUI (:LSPInfo)
-require("nvim-lsp-installer").setup {
-    automatic_installation = true
-}
-
-local lspconfig = require("lspconfig")
--- Language servers
-lspconfig.tsserver.setup {}
-lspconfig.ccls.setup {}
-lspconfig.pyright.setup{}
-
 
 --------------------------------------------------------------------------------
 -- LSPTrouble

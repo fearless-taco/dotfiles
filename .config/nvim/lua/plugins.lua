@@ -38,6 +38,4 @@ Plug 'famiu/nvim-reload'
 -- Completion (Conquer of Completion -COC) 
 Plug 'neoclide/coc.nvim'
 
-
-
 vim.call('plug#end')
