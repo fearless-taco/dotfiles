@@ -22,7 +22,6 @@ Plug 'p00f/clangd_extensions.nvim'
 Plug 'Raimondi/delimitMate'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'EdenEast/nightfox.nvim'
-Plug 'sbdchd/neoformat'
 
 -- Search
 Plug 'nvim-telescope/telescope.nvim'
@@ -37,5 +36,9 @@ Plug 'famiu/nvim-reload'
 
 -- Completion (Conquer of Completion -COC) 
 Plug 'neoclide/coc.nvim'
+
+-- Fomatting/Linting
+Plug 'sbdchd/neoformat'
+Plug 'dense-analysis/ale'
 
 vim.call('plug#end')
