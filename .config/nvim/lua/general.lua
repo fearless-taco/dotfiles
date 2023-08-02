@@ -30,3 +30,5 @@ vim.opt.ignorecase = true
 -- Yank to clipboard
 vim.api.nvim_command('set clipboard=unnamed')
 
+-- Formatting
+vim.g.neoformat_try_node_exe = 1
