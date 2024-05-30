@@ -32,3 +32,9 @@ vim.api.nvim_command('set clipboard=unnamed')
 
 -- Formatting
 vim.g.neoformat_try_node_exe = 1
+
+-- Status line 
+vim.api.nvim_exec([[
+  set laststatus=2
+  set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+]], false)
