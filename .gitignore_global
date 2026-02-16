@@ -3,3 +3,6 @@
 
 ## ASDF
 .tool-versions
+
+# Python virtual Environment
+.venv/
