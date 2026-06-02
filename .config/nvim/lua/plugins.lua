@@ -13,7 +13,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-lualine/lualine.nvim'
 
 -- Language server protcol
-Plug "williamboman/nvim-lsp-installer"
 Plug "neovim/nvim-lspconfig"
 Plug 'ray-x/lsp_signature.nvim'
 Plug 'p00f/clangd_extensions.nvim'
