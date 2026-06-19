@@ -1,3 +1,5 @@
+export _ZSHRC_LOADED=1
+
 # ---- MOTD (print once) ----
 if [[ -z "$_MOTD_SHOWN" && -t 1 ]]; then
   export _MOTD_SHOWN=1
@@ -26,3 +28,4 @@ zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 13
 
 plugins=(git)
+export PATH="$HOME/.local/bin:$PATH"
