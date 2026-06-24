@@ -13,6 +13,12 @@ if [[ -n "$JAVA_HOME" ]]; then
   export PATH="$JAVA_HOME/bin:$PATH"
 fi
 
+# --- Android --- 
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+
 # ---- Oh My Zsh ----
 export ZSH="$HOME/.oh-my-zsh"
 source "$ZSH/oh-my-zsh.sh"

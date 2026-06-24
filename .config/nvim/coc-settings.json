@@ -1,8 +1,17 @@
 {
     "languageserver": {
         "kotlin": {
-            "command": "~/lsp/kotlin/server/bin/kotlin-language-server",
-            "filetypes": ["kotlin"]
+            "command": "/opt/homebrew/bin/kotlin-language-server",
+            "cwd": "/Users/jason/Developer/digital-cash-sdk/android-sdk",
+            "filetypes": ["kotlin"],
+            "rootPatterns": [
+                "settings.gradle",
+                "settings.gradle.kts",
+                "build.gradle",
+                "build.gradle.kts",
+                ".git"
+            ],
+            "requireRootPattern": true
         }
     }
 }

@@ -66,6 +66,12 @@ vim.diagnostic.config({
 --------------------------------------------------------------------------------
 -- Neoformat on save
 --------------------------------------------------------------------------------
+vim.g.neoformat_enabled_python = { "yapf" }
+vim.g.neoformat_python_yapf = {
+    exe = "yapf",
+    stdin = 1,
+}
+
 vim.cmd [[
     autocmd BufWritePre * undojoin | Neoformat
 ]]
