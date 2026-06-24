@@ -72,6 +72,8 @@ vim.g.neoformat_python_yapf = {
     stdin = 1,
 }
 
+vim.g.neoformat_enabled_c = {}
+
 vim.cmd [[
     autocmd BufWritePre * undojoin | Neoformat
 ]]
