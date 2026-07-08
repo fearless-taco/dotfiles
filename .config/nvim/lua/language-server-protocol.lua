@@ -72,6 +72,26 @@ vim.g.neoformat_python_yapf = {
     stdin = 1,
 }
 
+-- With stdin, yapf resolves style config from nvim's cwd instead of the
+-- file's directory. Find .style.yapf upward from the file and pass it
+-- explicitly.
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+    pattern = "*.py",
+    callback = function(ev)
+        local style = vim.fs.find(".style.yapf", {
+            upward = true,
+            path = vim.fs.dirname(ev.file),
+        })[1]
+        if style then
+            vim.b[ev.buf].neoformat_python_yapf = {
+                exe = "yapf",
+                args = { "--style", style },
+                stdin = 1,
+            }
+        end
+    end,
+})
+
 vim.g.neoformat_enabled_c = {}
 
 vim.cmd [[
