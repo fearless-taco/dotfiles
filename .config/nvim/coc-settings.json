@@ -2,7 +2,9 @@
     "languageserver": {
         "kotlin": {
             "command": "/opt/homebrew/bin/kotlin-language-server",
-            "cwd": "/Users/jason/Developer/digital-cash-sdk/android-sdk",
+            "env": {
+                "JAVA_HOME": "/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home"
+            },
             "filetypes": ["kotlin"],
             "rootPatterns": [
                 "settings.gradle",
