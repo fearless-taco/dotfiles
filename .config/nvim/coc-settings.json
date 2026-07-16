@@ -14,6 +14,12 @@
                 ".git"
             ],
             "requireRootPattern": true
+        },
+        "markdown": {
+            "command": "/opt/homebrew/bin/marksman",
+            "args": ["server"],
+            "filetypes": ["markdown"],
+            "rootPatterns": [".git", ".marksman.toml"]
         }
     }
 }
