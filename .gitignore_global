@@ -6,3 +6,7 @@
 
 # Python virtual Environment
 .venv/
+
+# sourcekit-lsp build server (xcode-build-server)
+buildServer.json
+.compile
