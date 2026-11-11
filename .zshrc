@@ -7,13 +7,11 @@ if [[ -z "$_MOTD_SHOWN" && -t 1 ]]; then
 fi
 
 # ---- ASDF  ----
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
-# Java from asdf (after asdf is loaded)
-export JAVA_HOME="$(asdf where java 2>/dev/null)"
-if [[ -n "$JAVA_HOME" ]]; then
-  export PATH="$JAVA_HOME/bin:$PATH"
-fi
+# Java from asdf: sets JAVA_HOME and updates it on directory change
+[[ -f "${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/java/set-java-home.zsh" ]] && \
+  . "${ASDF_DATA_DIR:-$HOME/.asdf}/plugins/java/set-java-home.zsh"
 
 # --- Android --- 
 export ANDROID_HOME="$HOME/Library/Android/sdk"
@@ -23,10 +21,8 @@ export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
 
 # ---- Oh My Zsh ----
 export ZSH="$HOME/.oh-my-zsh"
-source "$ZSH/oh-my-zsh.sh"
 
-
-# ---- Configuration ----
+# Configuration (must be set before sourcing oh-my-zsh.sh)
 ZSH_THEME="robbyrussell"
 COMPLETION_WAITING_DOTS="true"
 
@@ -34,4 +30,6 @@ zstyle ':omz:update' mode auto
 zstyle ':omz:update' frequency 13
 
 plugins=(git)
+
+source "$ZSH/oh-my-zsh.sh"
 export PATH="$HOME/.local/bin:$PATH"
