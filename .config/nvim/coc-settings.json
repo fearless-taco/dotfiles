@@ -16,10 +16,9 @@
             "requireRootPattern": true
         },
         "markdown": {
-            "command": "/opt/homebrew/bin/marksman",
-            "args": ["server"],
+            "command": "/opt/homebrew/bin/markdown-oxide",
             "filetypes": ["markdown"],
-            "rootPatterns": [".git", ".marksman.toml"]
+            "rootPatterns": [".git", ".moxide.toml"]
         }
     }
 }
